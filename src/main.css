@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('assets/background.jpg');
+    background-size: 100%;
+    background-position: top;
+    animation-name: movebackground;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    cursor: none;
+    overflow: hidden;
+}
+
+@keyframes movebackground {
+    from {
+        background-position: top;
+    }
+
+    to {
+        background-position: bottom;
+    }
+}
+
+#rocket {
+    width: 100px;
+    position: fixed;
+    bottom: 50px;
+    left: 46%;
+}
+
+.enemy {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
